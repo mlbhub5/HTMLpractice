@@ -1,3 +1,6 @@
+效果呈現：  https://codepen.io/mlbhub5/pen/GQXjWM
+float介紹： https://css-tricks.com/all-about-floats/
+------------------------------------------------------------------------------
 <div class="container">
     <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
     <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
@@ -9,7 +12,7 @@
 
 <div class="clearfix">將float效果取消，否則會一直補上去</div>
 
-float介紹： https://css-tricks.com/all-about-floats/
+
 ------------------------------------------------------------------------------
 .container{
   margin:0 auto; /*0是上下不動，auto是左右平分*/

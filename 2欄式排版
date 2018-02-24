@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+    <div class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias praesentium incidunt quasi placeat? Eaque reprehenderit quasi blanditiis modi consequuntur rerum.</div>
+</div>
+
+
+.container{
+  margin:0 auto; /*0是上下不動，auto是左右平分*/
+  width: 800px;
+}
+.work{
+  float: left; /*float 指的是WORD裡的[文繞圖] 所以下面的div會自己補上來*/
+  width: 48%;
+  margin-right: 2%; /*48+2是50 剛好占一半*/
+  margin-bottom: 10px;
+  background-color: #ccc;
+  /*div[work]排列順序是
+  1work  2work
+  3work  4work
+  5work  6work
+  */
+}

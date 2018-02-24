@@ -8,6 +8,9 @@
 </div>
 
 
+float介紹： https://css-tricks.com/all-about-floats/
+
+
 .container{
   margin:0 auto; /*0是上下不動，auto是左右平分*/
   width: 800px;

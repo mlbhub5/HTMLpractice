@@ -1,0 +1,85 @@
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            background:#222;
+        }
+
+        #logo {
+            float: left;
+        }
+
+        nav {
+            float: right;
+        }
+
+        ul {
+            /*padding:14px;*/
+            margin: 0;
+            padding-left: 0;
+            list-style-type: none; /*拿掉項目標記*/
+        }
+
+        nav li {
+            float: left;
+        }
+
+        a{
+            font-size:20px;
+            padding:14px 10px;
+        }
+
+        nav a {
+            padding: 0 10px;
+            background:#222;
+            color:#d4d4d4;
+        }
+        nav a:hover{
+            padding: 0 10px;
+            background:#4da4ff;
+            color:#fff;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        hr {
+            width: 1000px;
+        }
+
+        iframe {
+            position:absolute;
+            width: 1000px;
+            height:92%;
+            background-color: gray;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div id="logo">XXXX系統</div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="AccessDenied.html" target="load">Home</a>
+                    </li>
+                    <li>
+                        <a href="Index.aspx" target="load">Services</a>
+                    </li>
+                    <li>
+                        <a href="http://www.google.com/" target="load">Case Studies</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr />
+            <div class="clearfix"></div>
+            <iframe name="load" src="AccessDenied.html" scrolling="no"></iframe>
+        </div>
+</body>
+</html>

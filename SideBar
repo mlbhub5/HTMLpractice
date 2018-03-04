@@ -1,5 +1,5 @@
 Source1:https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
-Source2:http://jsfiddle.net/x2jm7xcz/66/
+Source2:http://jsfiddle.net/x2jm7xcz/66/ (主要參考此網址)
 Final:https://codepen.io/mlbhub5/pen/vdwEgj
 ---------------------------------------
 <!DOCTYPE html>
@@ -53,13 +53,6 @@ html,body {
     width: 100%;
     border:none;
     
-}
-
-.main {  /*這個沒用到*/
-    margin-left: 300px; /* Same as the width of the sidenav */
-    /*font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-    height: 100%;
 }
 </style>
 </head>

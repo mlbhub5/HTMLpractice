@@ -1,11 +1,17 @@
-Source:https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+Source1:https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+Source2:http://jsfiddle.net/x2jm7xcz/66/
+Final:https://codepen.io/mlbhub5/pen/vdwEgj
 ---------------------------------------
 <!DOCTYPE html>
 <html>
 <head>
 <style>
-body {
-    font-family: "Lato", sans-serif;
+html,body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .sidenav {
@@ -32,36 +38,42 @@ body {
     color: #f1f1f1;
 }
 
-.main {
-    margin-left: 300px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+.frameContainer{
+    position: fixed; 
+    height: 100%;
+    top:0px;
+    left: 300px;
+    right:0px;
+    bottom:0px;
+    z-index:1;
 }
 
-/*@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}*/
+.main_iframe{
+    height: 100%;
+    width: 100%;
+    border:none;
+    
+}
+
+.main {  /*這個沒用到*/
+    margin-left: 300px; /* Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    height: 100%;
+}
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+  <a href="http://champion.gg/" target="load">champion.gg</a>
+  <a href="http://getbootstrap.com/docs/3.3/getting-started/#download" target="load">getbootstrap</a>
+  <a href="#clients" target="load">Clients</a>
+  <a href="#contact" target="load">Contact</a>
 </div>
 
-<div class="main">
-  <h2>Sidebar</h2>
-  <p>This sidebar is of full height (100%) and always shown.</p>
-  <p>Scroll down the page to see the result.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<div class="frameContainer">
+    <iframe class="main_iframe" name="load" scrolling="no"></iframe>
 </div>
-     
 </body>
 </html> 
